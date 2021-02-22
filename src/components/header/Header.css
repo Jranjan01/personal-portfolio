@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+.header {
+  background-color: var(--mainColor);
+
+  border-bottom: 2px dotted var(--borderColor);
+}
+.name-wrapper {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  min-height: 8em;
+}
+
+.name-wrapper > h1 {
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 37px;
+  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Kanit", sans-serif;
+  margin: 0 auto;
+  color: var(--mainText);
+  /* font-family: "Roboto Slab", serif; */
+}
+
+/* Animation */
+h1 {
+  animation: animated-text 4s steps(25, end) 1s 1 normal both,
+    animated-cursor 600ms steps(25, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.intro-wrapper {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.nav-wrapper {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid var(--borderColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mainColor);
+}
+.browser-dot {
+  height: 15px;
+  width: 15px;
+
+  border-radius: 50%;
+}
+#dot-1 {
+  background-color: #fc6058;
+}
+
+#dot-2 {
+  background-color: #fec02f;
+}
+
+#dot-3 {
+  background-color: #2aca3e;
+}
+.dots-wrapper {
+  display: flex;
+}
+.browser-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+#navigation {
+  margin: 0;
+  padding: 10px;
+}
+#nav-item {
+  cursor: pointer;
+  color: white;
+}
+#nav-item:hover {
+  color: rgb(251, 6, 6);
+  transition: all 1s;
+}
+.center-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left-column {
+  /* grid-area: left-column; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#profile_pic {
+  display: block;
+  margin: 0 auto;
+
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
+}
+#profile_pic:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  cursor: all-scroll;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.right-column {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 380px;
+  height: 200px;
+  border: 2px dotted #17b875;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  -webkit-box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);
+  -moz-box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);
+  box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);
+}
+
+#preview-shadow {
+  background-color: var(--previewShadow);
+
+  max-width: 300px;
+  height: 180px;
+  padding-left: 8px;
+  padding-top: 20px;
+}
+#preview {
+  width: 300px;
+  border: 1.5px solid #17a2b8;
+  background-color: var(--previewBg);
+
+  padding: 15px;
+  position: relative;
+}
+#preview > p {
+  font-family: "Courgette", cursive;
+  letter-spacing: 2px;
+}
+.corner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid #17a2b8;
+  background-color: #fff;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
+}
+@media screen and (max-width: 800px) {
+  .center-area {
+    display: flex;
+    flex-direction: column;
+  }
+  #preview-shadow {
+    max-width: 280px;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  #preview {
+    width: 280px;
+  }
+  .right-column {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .name-wrapper > h1 {
+    font-size: 20px;
+  }
+  #nav-item {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #preview-shadow {
+    width: 100%;
+  }
+  #preview {
+    width: 100%;
+  }
+  .right-column {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    border: 2px dotted #17b875;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #nav-item {
+    font-size: 11px;
+  }
+  .name-wrapper > h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 315px) {
+  #nav-item {
+    font-size: 8px;
+  }
+}

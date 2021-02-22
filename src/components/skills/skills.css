@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&family=Shippori+Mincho+B1:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap");
+.skill-container {
+  background-color: var(--mainColor);
+  border-bottom: 2px dotted var(--borderColor);
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 1px solid green;
+  padding: 10px;
+  background-color: var(--previewBg);
+  border-radius: 20px;
+  box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
+}
+.skills {
+  display: flex;
+  text-align: center;
+  margin: 5px auto;
+}
+.skills > h4 {
+  font-size: 18px;
+  margin-top: 5px;
+  color: white;
+}
+.skill-logo {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+}
+.line {
+  height: 3px;
+  width: 100%;
+
+  border-radius: 10px;
+}
+#skill1 {
+  background-color: rgb(26, 145, 153);
+}
+#skill2 {
+  background-color: rgb(209, 30, 14);
+}
+#skill3 {
+  background-color: yellow;
+}
+#skill4 {
+  background-color: blue;
+}
+#skill5 {
+  background-color: rgb(20, 207, 60);
+}
+#skill7 {
+  background-color: green;
+}
+#skill8 {
+  background-color: greenyellow;
+}
+.mt-2 {
+  font-family: "Roboto Slab", serif;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 20px;
+}
+#skill {
+  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  padding: 10px;
+  text-align: center;
+}
+.other-skills {
+  margin: 0 auto;
+  width: 50%;
+  background-color: var(--secondaryColor);
+}
+.other-skills > h4 {
+  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  padding: 12px 0 8px 10px;
+}
+.skill-wrapper {
+  height: auto;
+  background-color: black;
+}
+.skill-wrapper > h6 {
+  padding: 20px;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .center {
+    width: 100%;
+  }
+  .other-skills {
+    width: 100%;
+  }
+  .skill-wrapper > h6 {
+    font-size: 14px;
+  }
+}
