@@ -121,10 +121,11 @@ function Project() {
             <div className="post">
               <img className="thumbnail" src={weather} alt=".." />
               <div className="post-preview">
-                <h6 className="post-title">Weather App</h6>
+                <h6 className="post-title">Weather Website</h6>
                 <small>&#8618; Dec 2020</small>
                 <p className="post-intro">
-                  it's a real time weather app , developed on{" "}
+                  A basic current weather website , developed on Reactjs ,
+                  bootstrap & Api !
                   <span
                     style={{
                       color: "black",
@@ -158,7 +159,7 @@ function Project() {
                   >
                     Javascript
                   </span>
-                  , Bootstrap and Cookies for storing data !!
+                  , Bootstrap and Cookies !!
                 </p>
                 <Link to="/librarymang" className="read-more">
                   Read More

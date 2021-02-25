@@ -29,7 +29,10 @@
 }
 .post:hover {
   transform: translateY(-10px);
-  transition: 1s;
+  /* transform: rotateZ(360deg); */
+  cursor: pointer;
+
+  transition: all 1s;
 }
 .thumbnail {
   display: block;
@@ -69,7 +72,6 @@
   font-weight: bold;
 }
 .thumbnail:hover {
-  width: 200px;
   cursor: pointer;
 }
 @media screen and (max-width: 360px) {

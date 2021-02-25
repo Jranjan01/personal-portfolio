@@ -16,8 +16,8 @@ function Weatherapp() {
         Weather App
       </h2>
       <p>
-        it's a real time weather app , developed on React , bootstrap & Api !!
-        ...
+        A basic current weather website , developed on Reactjs , bootstrap & Api
+        ! ...
       </p>
       Link :-
       <a

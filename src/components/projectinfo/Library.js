@@ -2,6 +2,7 @@ import React from "react";
 import library from "../../images/library.jpg";
 import library2 from "../../images/library2.jpg";
 import library3 from "../../images/library3.jpg";
+import library4 from "../../images/library4.png";
 import { Link } from "react-router-dom";
 function Library() {
   return (
@@ -35,6 +36,9 @@ function Library() {
         <li>- Javascript</li>
         <li>- Bootstrap4,</li>
       </ul>
+      <img src={library4} alt="..." className="img-fluid" width="600px" />{" "}
+      <br />
+      <br />
       <img src={library2} alt="..." className="img-fluid" width="600px" />{" "}
       <br />
       <img src={library3} alt="..." className="img-fluid my-4" width="300px" />
