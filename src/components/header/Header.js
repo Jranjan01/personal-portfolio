@@ -8,7 +8,7 @@ function Header() {
       <div className="container">
         <div className="name-wrapper">
           <h1>Hi, I'm Jnana Ranjan Sethy,</h1>
-          <p className="text-white">I'm a Web developer</p>
+          <p className="text-white my_info">I'm a Full-Stack Developer</p>
         </div>
         <div className="intro-wrapper">
           <div className="nav-wrapper ">

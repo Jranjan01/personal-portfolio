@@ -1,100 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&family=Shippori+Mincho+B1:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap");
-.skill-container {
-  background-color: var(--mainColor);
-  border-bottom: 2px dotted var(--borderColor);
-}
-.center {
-  margin: auto;
-  width: 50%;
-  border: 1px solid green;
-  padding: 10px;
-  background-color: var(--previewBg);
-  border-radius: 20px;
-  box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
-}
-.skills {
-  display: flex;
-  text-align: center;
-  margin: 5px auto;
-}
-.skills > h4 {
-  font-size: 18px;
-  margin-top: 5px;
-  color: white;
-}
-.skill-logo {
-  margin-right: 10px;
-  color: white;
-  font-size: 20px;
-}
-.line {
-  height: 3px;
-  width: 100%;
-
-  border-radius: 10px;
-}
-#skill1 {
-  background-color: rgb(26, 145, 153);
-}
-#skill2 {
-  background-color: rgb(209, 30, 14);
-}
-#skill3 {
-  background-color: yellow;
-}
-#skill4 {
-  background-color: blue;
-}
-#skill5 {
-  background-color: rgb(20, 207, 60);
-}
-#skill7 {
-  background-color: green;
-}
-#skill8 {
-  background-color: greenyellow;
-}
-.mt-2 {
-  font-family: "Roboto Slab", serif;
-  font-family: "Shippori Mincho B1", serif;
-  font-size: 20px;
-}
-#skill {
-  font-family: "Anton", sans-serif;
-  font-family: "Bebas Neue", cursive;
-  padding: 10px;
-  text-align: center;
-}
-.other-skills {
-  margin: 0 auto;
-  width: 50%;
-  background-color: var(--secondaryColor);
-}
-.other-skills > h4 {
-  font-family: "Anton", sans-serif;
-  font-family: "Bebas Neue", cursive;
-  padding: 12px 0 8px 10px;
-}
-.skill-wrapper {
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+.parent-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../images/skill_img.jpg");
+  position: relative;
+  background-size: 100% 100%;
+  width: 100vw;
   height: auto;
-  background-color: black;
 }
-.skill-wrapper > h6 {
-  padding: 20px;
-  font-family: "Libre Baskerville", serif;
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 20px 0;
+}
+
+#skill {
+  font-family: "Grenze Gotisch", cursive;
+  font-family: "Wallpoet", cursive;
+
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 0 10px 0;
+}
+
+#skill::after {
+  content: " ";
+  width: 60px;
+  height: 3px;
+  background-color: teal;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.main_container {
+  max-width: 60vw;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.skill_degine {
+  width: 300px;
+  background-image: linear-gradient(
+    148deg,
+    rgba(43, 11, 223, 0.945) 30%,
+    rgba(0, 0, 0, 0.9) 25%
+  );
+  border: 2px solid;
+  animation: skill_border 1s linear infinite;
+  animation-direction: alternate;
+  text-align: center;
+  margin: 10px;
+}
+@keyframes skill_border {
+  0% {
+    border-color: red;
+  }
+  15% {
+    border-color: rgb(197, 179, 12);
+  }
+  30% {
+    border-color: blue;
+  }
+  45% {
+    border-color: green;
+  }
+  60% {
+    border-color: rgb(12, 200, 233);
+  }
+  80% {
+    border-color: rgb(2, 170, 91);
+  }
+  100% {
+    border-color: rgb(211, 18, 179);
+  }
+}
+.skill_degine > h4 {
   color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 5px;
+  font-size: 16px;
 }
-@media screen and (max-width: 600px) {
-  .center {
+/* ----------- */
+
+@media screen and (max-width: 660px) {
+  .main_container {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .skill_degine {
     width: 100%;
   }
-  .other-skills {
-    width: 100%;
-  }
-  .skill-wrapper > h6 {
-    font-size: 14px;
+  #skill::after {
+    top: 10%;
   }
 }

@@ -15,7 +15,7 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
           alert("your message send successfully");
         },
         (error) => {
@@ -26,15 +26,11 @@ function Contact() {
   }
 
   return (
-    <header
-      className="container-fluid"
-      id="contact"
-      style={{ backgroundColor: "var(--mainColor)" }}
-    >
-      <h2 className="text-center text-white" id="send-msg">
+    <header className="container-fluid" id="contact">
+      <h2 className="text-center get_touch" id="send-msg">
         Get In Touch
       </h2>
-      <div className="container">
+      <div className="container contact_area">
         <form id="contact-form" onSubmit={sendEmail} autoComplete="off">
           <label>Name :</label>
           <input
@@ -59,7 +55,7 @@ function Contact() {
             className="input-field text-white"
             type="email"
             name="email"
-            placeholder="Email Address"
+            placeholder="webdev@gmail.com"
             required
           />
 
@@ -67,11 +63,11 @@ function Contact() {
           <textarea
             className="input-field text-white"
             name="message"
-            placeholder="Message .."
+            placeholder="Message...."
             required
           ></textarea>
 
-          <input id="submit-btn" type="submit" value="Send" />
+          <input id="submit-btn" type="submit" value="SEND" />
         </form>
         <small className="text-white" style={{ fontFamily: "serif" }}>
           copyright &copy; 2021-2022

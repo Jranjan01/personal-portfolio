@@ -9,11 +9,11 @@ function About() {
       <div className="container">
         <div className="about-wrapper">
           <div className="about-me">
-            <h4>More about me</h4>
-            <p>
-              &#9763; &#8460;ello , i am{" "}
-              <span className="text-info">&#74;NANA RANJAN SETHY</span> & I'm an
-              Engineer by profession and a{" "}
+            <h4 className="more_about">More about me</h4>
+            <p className="p">
+              Hello , i am
+              <span className="text-info"> &#74;NANA RANJAN SETHY </span> & I'm
+              an Engineer by profession and a
               <span className="text-info">WEB DEVELOPER</span> (MERN Stack
               developer)
             </p>
@@ -26,6 +26,7 @@ function About() {
               Apart from study i am pretty much interested to watching hacking /
               Technology related movies
             </p>
+
             <div className="break"></div>
             <p>
               Fullstack developer with primary focus on{" "}
@@ -40,46 +41,57 @@ function About() {
             <a href={myinfo} target="_blank">
               <img
                 src={myinfo}
-                className="img-fluid"
+                className="img-fluid mySlides"
                 alt="..."
                 id="social-img"
               />
             </a>
+            <div className="fine_me">
+              <h3 id="find-me" className="text-white">
+                Find Me 👇
+              </h3>
+              <address>
+                <div id="social-link">
+                  <div className="social-links">
+                    <a href="https://www.linkedin.com/in/j-ranjan-sethy-%F0%9F%87%AE%F0%9F%87%B3-35121a1b1/">
+                      <FaLinkedinIn id="link1" />
+                    </a>
+                  </div>
+                  <div className="social-links">
+                    <a href="https://github.com/Jranjangudu/">
+                      <FaGithub />
+                    </a>
+                  </div>
+                  <div className="social-links">
+                    {" "}
+                    <a href="https://www.instagram.com/its_me_gudu_/">
+                      <FaInstagram id="link2" />
+                    </a>
+                  </div>
+                </div>
 
-            <h3 id="find-me" className="text-white">
-              Find Me 👇
-            </h3>
-            <div id="social-link">
-              <div className="social-links">
-                <a href="https://www.linkedin.com/in/j-ranjan-sethy-%F0%9F%87%AE%F0%9F%87%B3-35121a1b1/">
-                  <FaLinkedinIn id="link1" />
-                </a>
-              </div>
-              <div className="social-links">
-                <a href="https://github.com/Jranjangudu/">
-                  <FaGithub />
-                </a>
-              </div>
-              <div className="social-links">
-                {" "}
-                <a href="https://www.instagram.com/its_me_gudu_/">
-                  <FaInstagram id="link2" />
-                </a>
-              </div>
+                <p
+                  className="pt-2 text-white"
+                  style={{ fontFamily: "monospace", fontSize: "16px" }}
+                >
+                  &#9993;
+                  <a href="mailto:jnana.ranjan408@gmail.com">Send Email</a>
+                  <p
+                    className="mt-2 text-white"
+                    style={{ fontFamily: "monospace", fontSize: "14px" }}
+                  >
+                    {" "}
+                    &#9993; jnana.ranjan408@gmail.com
+                  </p>
+                </p>
+                <p
+                  className=" text-white"
+                  style={{ fontFamily: "monospace", fontSize: "14px" }}
+                >
+                  &#9990; Contact :- +91 8114994487
+                </p>
+              </address>
             </div>
-
-            <p
-              className="pt-2 text-white"
-              style={{ fontFamily: "monospace", fontSize: "16px" }}
-            >
-              &#9993; jnana.ranjan408@gmail.com
-            </p>
-            <p
-              className=" text-white"
-              style={{ fontFamily: "monospace", fontSize: "14px" }}
-            >
-              &#9990; Contact :- +91 8114994487
-            </p>
           </div>
         </div>
       </div>

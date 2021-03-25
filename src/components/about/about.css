@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Wallpoet&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 * {
   margin: 0;
@@ -6,7 +8,16 @@
   box-sizing: border-box;
 }
 .main-container {
-  background-color: var(--secondaryColor);
+  /* background-color: var(--secondaryColor); */
+  background-image: linear-gradient(
+      110deg,
+      rgba(0, 0, 0, 0.8) 50%,
+      transparent 50%
+    ),
+    url("../../images/about_img.jpg");
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
   border-bottom: 2px dotted var(--borderColor);
 }
 .about-wrapper {
@@ -18,14 +29,38 @@
 }
 .about-me {
   color: white;
+  position: relative;
 }
-.about-me > h4 {
-  font-family: "Anton", sans-serif;
-  font-family: "Bebas Neue", cursive;
-}
+
 .about-me > p {
   font-family: "Source Code Pro", monospace;
 }
+.more_about {
+  font-family: "Grenze Gotisch", cursive;
+  font-family: "Wallpoet", cursive;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.p::first-letter {
+  font-size: 4rem;
+  color: rgb(0, 217, 255);
+  float: left;
+  display: block;
+  margin: 0 10px 0 0;
+  line-height: 0.6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.more_about::after {
+  content: "";
+  width: 200px;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  transform: translate(-10% -6%);
+}
+
 .social-links {
   display: grid;
   align-content: center;
@@ -34,10 +69,54 @@
 #social-img {
   width: 100%;
 }
+.fine_me {
+  margin: 20px;
+  padding: 0 1px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: border_design 5s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes border_design {
+  0% {
+    background-color: transparent;
+  }
+  15% {
+    background-color: rgb(0, 0, 0);
+  }
+  30% {
+    background-color: blue;
+  }
+  45% {
+    background-color: rgb(0, 0, 0);
+  }
+  60% {
+    background-color: transparent;
+  }
+  80% {
+    background-color: rgb(14, 17, 218);
+  }
+  100% {
+    background-color: rgb(219, 23, 72);
+  }
+}
 #find-me {
-  font-family: "Anton", sans-serif;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Grenze Gotisch", cursive;
+  font-family: "Wallpoet", cursive;
   padding: 14px 0 8px 0;
+  margin-bottom: 10px;
+}
+#find-me::after {
+  content: " ";
+  width: 100px;
+  height: 3px;
+  background: rgb(0, 255, 76);
+  position: absolute;
+
+  z-index: 20;
+  top: 28%;
+  left: 48%;
+  transform: translate(-48%);
 }
 .break {
   width: 100%;
@@ -83,5 +162,15 @@
   .about-wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .more_about::after {
+    width: 150px;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .more_about {
+    font-size: 28px;
+    padding-bottom: 40px;
   }
 }

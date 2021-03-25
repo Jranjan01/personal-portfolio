@@ -5,6 +5,10 @@ body {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+::selection {
+  background: #0d0f99;
+  color: white;
+}
 body * {
   transition: 0.3s;
 }

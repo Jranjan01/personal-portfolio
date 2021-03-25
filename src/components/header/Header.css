@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Wallpoet&display=swap");
+
+:root {
+  --icon-width: 20rem;
+  --icon-sm-width: 10rem;
+}
+
 .header {
   background-color: var(--mainColor);
+  background-image: url(../../images/header_img.jpg);
+  background-size: 100% 100%;
 
   border-bottom: 2px dotted var(--borderColor);
 }
@@ -11,17 +21,18 @@
   text-align: center;
   align-content: center;
   min-height: 8em;
+  padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .name-wrapper > h1 {
   border-right: solid 3px rgba(0, 255, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-size: 37px;
-  font-family: "Anton", sans-serif;
-  font-family: "Bebas Neue", cursive;
-  font-family: "Kanit", sans-serif;
-  margin: 0 auto;
+  font-size: 3rem;
+  text-shadow: 2px 4px 3px rgb(9, 129, 199);
+  font-family: "Grenze Gotisch", cursive;
+  margin: 10px auto;
   color: var(--mainText);
   /* font-family: "Roboto Slab", serif; */
 }
@@ -29,7 +40,7 @@
 /* Animation */
 h1 {
   animation: animated-text 4s steps(25, end) 1s 1 normal both,
-    animated-cursor 600ms steps(25, end) infinite;
+    animated-cursor 600ms steps(29, end) infinite;
 }
 
 /* text animation */
@@ -39,7 +50,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 20ch;
+    width: 22ch;
   }
 }
 
@@ -54,6 +65,30 @@ h1 {
   }
 }
 
+@keyframes blink {
+  0% {
+    border-color: red;
+  }
+  15% {
+    border-color: rgb(197, 179, 12);
+  }
+  30% {
+    border-color: blue;
+  }
+  45% {
+    border-color: green;
+  }
+  60% {
+    border-color: rgb(12, 200, 233);
+  }
+  80% {
+    border-color: rgb(2, 170, 91);
+  }
+  100% {
+    border-color: rgb(211, 18, 179);
+  }
+}
+
 .intro-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
@@ -62,8 +97,28 @@ h1 {
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-}
 
+  border: 2px solid;
+  z-index: 10;
+
+  animation: blink 1s linear infinite;
+  animation-direction: alternate;
+}
+.my_info {
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.my_info::after {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  width: var(--icon-width);
+  height: 25px;
+  font-size: 1.4rem;
+  color: rgb(255, 30, 0);
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid rgb(0, 255, 191);
+}
 .nav-wrapper {
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid var(--borderColor);
@@ -221,6 +276,10 @@ a {
   font-family: "Courgette", cursive;
   letter-spacing: 2px;
 }
+#preview > h3 {
+  font-family: "Grenze Gotisch", cursive;
+  font-family: "Wallpoet", cursive;
+}
 .corner {
   width: 7px;
   height: 7px;
@@ -275,6 +334,9 @@ a {
   #nav-item {
     font-size: 12px;
   }
+  .text-white::after {
+    width: var(--icon-sm-width);
+  }
 }
 @media screen and (max-width: 400px) {
   #preview-shadow {
@@ -301,11 +363,24 @@ a {
     font-size: 11px;
   }
   .name-wrapper > h1 {
-    font-size: 18px;
+    font-size: 24px;
+  }
+  .right-column {
+    box-shadow: none;
+  }
+  .right-column {
+    border-left: none;
+    border-right: none;
   }
 }
 @media screen and (max-width: 315px) {
   #nav-item {
     font-size: 8px;
+  }
+  #preview > h3 {
+    font-size: 16px;
+  }
+  #preview > p {
+    font-size: 12px;
   }
 }
