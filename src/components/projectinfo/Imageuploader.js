@@ -16,14 +16,14 @@ function Imageuploader() {
         Image Uploader
       </h2>
       <p>
-        A fully User Authentication Web Application Developed on MERN stack
-        (MongoDB, Express, Reacts, Nodejs) ,
+        This Web Application Developed on MERN stack (MongoDB, Express, Reacts,
+        Nodejs)
       </p>
       <p>
-        For verification used Jsonwebtoken(JWT), For Password hashing used
-        Bcryptjs ,Email validation check, & uploading image into cloudinary by
-        the help of Multer and uuid(Universally unique identifier) For generate
-        random unique ID, !!
+        For User Authentication used Jsonwebtoken(JWT), For Password hashing
+        used Bcryptjs ,Email validation check, & uploading image into cloudinary
+        by the help of Multer and uuid (Universally unique identifier) For
+        generate random unique ID
       </p>
       Link :-
       <a

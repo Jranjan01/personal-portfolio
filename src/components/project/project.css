@@ -6,10 +6,9 @@
 }
 .project-wrapper {
   /* background-color: var(--secondaryColor); */
-  background-image: linear-gradient(rgba(0, 10, 0, 0), rgba(0, 10, 0, 0)),
+  background-image: linear-gradient(rgba(0, 10, 0, 0.4), rgba(0, 10, 0, 0.5)),
     url(../../images/project_img.jpg);
   background-size: 100% 100%;
-  border-bottom: 2px dotted var(--borderColor);
 }
 .container {
   position: relative;
@@ -42,7 +41,36 @@
   box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: -20px -17px 11px -10px rgba(0, 0, 0, 0.6);
+  animation: project_animation 1.5s linear infinite;
+  animation-direction: alternate;
+  -moz-animation: project_animation 1.5s linear infinite alternate;
+  -webkit-animation: project_animation 1.5s linear infinite alternate;
 }
+
+@keyframes project_animation {
+  0% {
+    border-color: #00008b;
+  }
+  15% {
+    border-color: #ff1493;
+  }
+  30% {
+    border-color: #1e90ff;
+  }
+  45% {
+    border-color: #00ff00;
+  }
+  60% {
+    border-color: #f5fffa;
+  }
+  80% {
+    border-color: #ff4500;
+  }
+  100% {
+    border-color: #ffff00;
+  }
+}
+
 .post:hover {
   transform: translateY(-10px);
   /* transform: rotateZ(360deg); */
@@ -57,22 +85,29 @@
   object-fit: cover;
 }
 .seelive {
-  color: black;
+  color: #fff;
   margin-left: 10px;
 }
 .seelive:hover {
   text-decoration: underline;
+  color: red;
 }
 .read-more {
-  color: black;
+  color: #fff;
 }
 .post-preview {
-  background-color: white;
+  /* background-color: rgb(204, 199, 199); */
+  background-image: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.76) 50%,
+    rgba(0, 0, 0, 0.3) 50%
+  );
   padding: 15px;
+  color: white;
 }
 
 .post-title {
-  color: black;
+  color: rgb(47, 246, 230);
   margin: 0;
   font-weight: bold;
   font-size: 20px;
@@ -82,14 +117,16 @@
 }
 
 .post-intro {
-  color: #090c0f;
+  color: #fff;
   font-size: 14px;
-  font-family: "Cardo", serif;
+  font-family: monospace;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 .thumbnail:hover {
   cursor: pointer;
 }
+
 @media (max-width: 1200px) {
   #project::after {
     top: 6%;

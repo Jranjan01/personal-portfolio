@@ -17,7 +17,8 @@ function Library() {
         library Management System
       </h2>
       <p>
-        It's a web application developed on Javascript, Bootstrap and Cookies !!
+        It's a easy level of web application developed on Javascript, Bootstrap
+        and Cookies
       </p>
       Link :-
       <a

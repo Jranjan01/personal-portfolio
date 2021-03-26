@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import myinfo from "../../images/myinfo.png";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import resume from "../../images/resume.pdf";
 function About() {
   return (
@@ -14,28 +15,37 @@ function About() {
               Hello , i am
               <span className="text-info"> &#74;NANA RANJAN SETHY </span> & I'm
               an Engineer by profession and a
-              <span className="text-info">WEB DEVELOPER</span> (MERN Stack
+              <span className="text-info"> WEB DEVELOPER </span> (MERN Stack
               developer)
             </p>
             <p>
-              Presently i am Pursuring my Graduation from Raajdhani Engineering
-              college(BBSR) , Apart from my curriculum i have done many project
-              on Web development,
+              &#187; Presently i am Pursuring my Graduation from Raajdhani
+              Engineering college(BBSR) ,
             </p>
             <p>
-              Apart from study i am pretty much interested to watching hacking /
-              Technology related movies
+              &#187; Apart from my curriculum i have done many project on Web
+              development,
+            </p>
+            <p>
+              &#187; Apart from study i am pretty much interested to watching
+              hacking / Technology related movies
             </p>
 
-            <div className="break"></div>
+            <div className="break my-2"></div>
             <p>
-              Fullstack developer with primary focus on{" "}
+              &#187; Fullstack developer with primary focus on{" "}
               <span className="text-info">MERN Stack</span> (MongoDB , Express ,
               ReactJS , NodeJS)
             </p>
-            <a href={resume} target="_blank">
-              <button className="button">Resume &#8594;</button>
-            </a>
+
+            <div className="pt-3">
+              <a href={resume} target="_blank">
+                <button className="button">
+                  {" "}
+                  <p className="resume">Resume &#8594;</p>
+                </button>
+              </a>
+            </div>
           </div>
           <div className="social-links">
             <a href={myinfo} target="_blank">
@@ -66,6 +76,13 @@ function About() {
                     {" "}
                     <a href="https://www.instagram.com/its_me_gudu_/">
                       <FaInstagram id="link2" />
+                    </a>
+                  </div>
+
+                  <div className="social-links">
+                    {" "}
+                    <a href="https://leetcode.com/Gudu/">
+                      <SiLeetcode id="link3" />
                     </a>
                   </div>
                 </div>

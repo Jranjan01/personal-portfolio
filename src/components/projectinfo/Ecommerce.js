@@ -17,7 +17,10 @@ function Ecommerce() {
       <h2 className="text-dark" style={{ fontFamily: "revert" }}>
         E-Commerce Website
       </h2>
-      <p>It’s a Rasponsive E-commerce website developed on React js</p>
+      <p>
+        : It’s a Responsive E-commerce website developed on React js , React
+        router , React Hooks & Bootstrap4 !
+      </p>
       Link :-
       <a
         href="https://github.com/Jranjangudu/Titaniumsite"

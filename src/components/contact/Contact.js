@@ -26,7 +26,7 @@ function Contact() {
   }
 
   return (
-    <header className="container-fluid" id="contact">
+    <header className="container-fluid pb-4" id="contact">
       <h2 className="text-center get_touch" id="send-msg">
         Get In Touch
       </h2>
@@ -69,7 +69,7 @@ function Contact() {
 
           <input id="submit-btn" type="submit" value="SEND" />
         </form>
-        <small className="text-white" style={{ fontFamily: "serif" }}>
+        <small className="text-white " style={{ fontFamily: "serif" }}>
           copyright &copy; 2021-2022
         </small>
       </div>

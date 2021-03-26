@@ -16,9 +16,10 @@ function Covid19() {
         Covid-19 Tracker
       </h2>
       <p>
-        This covid-19 Tracker website developed on React js, Chart js for
-        showing a beautiful Graph, Real time APIs, Bootstrap4, & React count up
-        for smooth increasing the numbers
+        This website developed on React js & Chart js, Chart js helps to make a
+        bar / line charts , Real time APIs & Bootstrap4, Basically this website
+        shows the total covid-19 active, death & recovery case of every
+        countries wise
       </p>
       <p>
         This covid19 tracker helps people to get the number of active, death &

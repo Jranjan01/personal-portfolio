@@ -23,9 +23,11 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.18);
   animation: contact_border 1s linear infinite;
   animation-direction: alternate;
+  -moz-animation: contact_border 1s linear infinite alternate;
+  -webkit-animation: contact_border 1s linear infinite alternate;
 }
 @keyframes contact_border {
   0% {
@@ -83,8 +85,18 @@
   padding-top: 10px;
   padding-bottom: 10px;
   color: #fff;
-  background-color: var(--buttonColor);
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #0e1b90);
+
   border: none;
+  border-radius: 8px;
+  transition: all 3s;
+}
+#submit-btn:hover {
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+  background: linear-gradient(to right, #1cb5e0, #000046);
 }
 .get_touch {
   font-family: "Grenze Gotisch", cursive !important;

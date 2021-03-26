@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital,wght@0,400;0,500;0,600;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Wallpoet&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100&display=swap");
 :root {
   --icon-width: 20rem;
   --icon-sm-width: 10rem;
@@ -13,8 +13,6 @@
   background-color: var(--mainColor);
   background-image: url(../../images/header_img.jpg);
   background-size: 100% 100%;
-
-  border-bottom: 2px dotted var(--borderColor);
 }
 .name-wrapper {
   display: grid;
@@ -30,16 +28,23 @@
   white-space: nowrap;
   overflow: hidden;
   font-size: 3rem;
-  text-shadow: 2px 4px 3px rgb(9, 129, 199);
+  text-shadow: 2px 2px 2px rgb(7, 84, 156);
   font-family: "Grenze Gotisch", cursive;
+
   margin: 10px auto;
   color: var(--mainText);
+
   /* font-family: "Roboto Slab", serif; */
 }
 
 /* Animation */
 h1 {
   animation: animated-text 4s steps(25, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+
+  -moz-animation: animated-text 4s steps(25, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+  -webkit-animation: animated-text 4s steps(25, end) 1s 1 normal both,
     animated-cursor 600ms steps(29, end) infinite;
 }
 
@@ -58,7 +63,7 @@ h1 {
 
 @keyframes animated-cursor {
   from {
-    border-right-color: rgba(0, 255, 0, 0.75);
+    border-right-color: rgba(46, 248, 255, 0.75);
   }
   to {
     border-right-color: transparent;
@@ -91,6 +96,10 @@ h1 {
 
 .intro-wrapper {
   background-color: var(--secondaryColor);
+  background-color: #001845;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url(https://cdn.pixabay.com/photo/2017/07/03/11/58/smoke-2467437__340.jpg);
+  background-size: 100% 100%;
   border: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
 
@@ -103,6 +112,9 @@ h1 {
 
   animation: blink 1s linear infinite;
   animation-direction: alternate;
+
+  -moz-animation: blink 1s linear infinite alternate;
+  -webkit-animation: blink 1s linear infinite alternate;
 }
 .my_info {
   text-transform: uppercase;
@@ -125,7 +137,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--mainColor);
+  background-color: transparent;
 }
 .browser-dot {
   height: 15px;
@@ -134,15 +146,24 @@ h1 {
   border-radius: 50%;
 }
 #dot-1 {
-  background-color: #fc6058;
+  animation: dot_animation 1s linear infinite;
+  animation-direction: alternate;
+  -moz-animation: dot_animation 1s linear infinite alternate;
+  -webkit-animation: dot_animation 1s linear infinite alternate;
 }
 
 #dot-2 {
-  background-color: #fec02f;
+  animation: dot_animation 1.2s linear infinite;
+  animation-direction: alternate;
+  -moz-animation: dot_animation 1.2s linear infinite alternate;
+  -webkit-animation: dot_animation 1.2s linear infinite alternate;
 }
 
 #dot-3 {
-  background-color: #2aca3e;
+  animation: dot_animation 1.5s linear infinite;
+  animation-direction: alternate;
+  -moz-animation: dot_animation 1.5s linear infinite alternate;
+  -webkit-animation: dot_animation 1.5s linear infinite alternate;
 }
 .dots-wrapper {
   display: flex;
@@ -157,6 +178,29 @@ h1 {
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+@keyframes dot_animation {
+  0% {
+    background-color: #00008b;
+  }
+  15% {
+    background-color: #ff1493;
+  }
+  30% {
+    background-color: #1e90ff;
+  }
+  45% {
+    background-color: #00ff00;
+  }
+  60% {
+    background-color: #f5fffa;
+  }
+  80% {
+    background-color: #ff4500;
+  }
+  100% {
+    background-color: #ffff00;
+  }
 }
 a {
   text-decoration: none;
@@ -190,12 +234,41 @@ a {
 #profile_pic {
   display: block;
   margin: 0 auto;
-
+  background-color: var(--secondaryColor);
   height: 200px;
   width: 200px;
   object-fit: cover;
-  border: 2px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
+  animation: profile_animation 1.5s linear infinite;
+  animation-direction: alternate;
+  -moz-animation: profile_animation 1.5s linear infinite alternate;
+  -webkit-animation: profile_animation 1.5s linear infinite alternate;
 }
+
+@keyframes profile_animation {
+  0% {
+    border-color: #00008b;
+  }
+  15% {
+    border-color: #ff1493;
+  }
+  30% {
+    border-color: #1e90ff;
+  }
+  45% {
+    border-color: #00ff00;
+  }
+  60% {
+    border-color: #f5fffa;
+  }
+  80% {
+    border-color: #ff4500;
+  }
+  100% {
+    border-color: #ffff00;
+  }
+}
+
 #profile_pic:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
@@ -245,7 +318,7 @@ a {
   margin-bottom: 50px;
   width: 380px;
   height: 200px;
-  border: 2px dotted #17b875;
+  border: 1px dashed #17b875;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,7 +330,7 @@ a {
 }
 
 #preview-shadow {
-  background-color: var(--previewShadow);
+  /* background-color: var(--previewShadow); */
 
   max-width: 300px;
   height: 180px;
@@ -267,7 +340,7 @@ a {
 #preview {
   width: 300px;
   border: 1.5px solid #17a2b8;
-  background-color: var(--previewBg);
+  background-color: transparent;
 
   padding: 15px;
   position: relative;
@@ -281,14 +354,41 @@ a {
   font-family: "Wallpoet", cursive;
 }
 .corner {
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: 1.5px solid #17a2b8;
   background-color: #fff;
   position: absolute;
-}
 
+  animation: corner_animation 2s linear infinite alternate;
+  -moz-animation: corner_animation 2s linear infinite alternate;
+  -webkit-animation: corner_animation 2s linear infinite alternate;
+  /* animation-direction: alternate; */
+}
+@keyframes corner_animation {
+  0% {
+    background-color: #00008b;
+  }
+  15% {
+    background-color: #ff1493;
+  }
+  30% {
+    background-color: #1e90ff;
+  }
+  45% {
+    background-color: #00ff00;
+  }
+  60% {
+    background-color: #cf0606;
+  }
+  80% {
+    background-color: #ff4500;
+  }
+  100% {
+    background-color: #ffff00;
+  }
+}
 #corner-tl {
   top: -5px;
   left: -5px;
@@ -371,6 +471,12 @@ a {
   .right-column {
     border-left: none;
     border-right: none;
+  }
+  .my_info {
+    font-size: 11px;
+  }
+  .my_info::after {
+    height: 20px;
   }
 }
 @media screen and (max-width: 315px) {

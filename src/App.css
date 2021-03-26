@@ -3,9 +3,13 @@
   flex-direction: column;
   position: fixed;
   top: 40%;
+  z-index: 20;
+  border: 1px solid red;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 10px;
 }
 .social-link {
-  font-size: 20px;
+  font-size: 25px;
 }
 .social-link > a {
   font-size: 22px;
@@ -18,4 +22,9 @@
 }
 #link3 {
   color: rgb(3, 165, 240);
+}
+@media screen and (max-width: 620px) {
+  .sidenav {
+    display: none;
+  }
 }

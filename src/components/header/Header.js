@@ -41,7 +41,7 @@ function Header() {
                   <div id="corner-tl" className="corner"></div>
                   <div id="corner-tr" className="corner"></div>
                   <h3>What I'm Doing</h3>
-                  <p> I'm an Engineer by profession & a web developer</p>
+                  <p> I'm an Engineer by profession & a Web Developer</p>
                   <div id="corner-br" className="corner"></div>
                   <div id="corner-bl" className="corner"></div>
                 </div>

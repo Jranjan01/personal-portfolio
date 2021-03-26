@@ -20,20 +20,13 @@ function Project() {
           <div>
             <div className="post">
               <img className="thumbnail" src={imageuploader} alt=".." />
+
               <div className="post-preview">
                 <h6 className="post-title">Image Uploader </h6>
                 <small>&#8618; Jan 2021 – Feb 2021</small>
                 <p className="post-intro">
-                  A fully User Authentication Web Application Developed on{" "}
-                  <span
-                    style={{
-                      color: "black",
-                      fontSize: "18px",
-                    }}
-                  >
-                    MERN stack
-                  </span>{" "}
-                  (MongoDB, Express, Reactjs, Nodejs) ,
+                  This Web Application Developed on MERN stack (MongoDB,
+                  Express, Reacts, Nodejs)
                 </p>
                 <Link to="/imageuploader" className="read-more">
                   Read More
@@ -58,17 +51,8 @@ function Project() {
                 <h6 className="post-title">E-Commerce </h6>
                 <small>&#8618; Nov 2020</small>
                 <p className="post-intro">
-                  It’s a Rasponsive website developed on{" "}
-                  <span
-                    style={{
-                      color: "black",
-                      fontSize: "18px",
-                    }}
-                  >
-                    {" "}
-                    React JS, React Router & React Hooks{" "}
-                  </span>{" "}
-                  , Bootstrap4,
+                  It’s a Rasponsive website developed on React JS, React Router
+                  & React Hooks , Bootstrap4,
                 </p>
                 <Link to="/ecommerce" className="read-more">
                   Read More
@@ -88,20 +72,14 @@ function Project() {
             <div className="post">
               <img className="thumbnail" src={covid191} alt=".." />
 
+              <div className="captions"></div>
+
               <div className="post-preview">
                 <h6 className="post-title">Covid-19 Tracker</h6>
                 <small>&#8618; Dec 2020</small>
                 <p className="post-intro">
-                  This covid-19 Tracker website developed on{" "}
-                  <span
-                    style={{
-                      color: "black",
-                      fontSize: "18px",
-                    }}
-                  >
-                    React JS, Chart JS
-                  </span>
-                  ...
+                  This website developed on React js & Chart js, Chart js helps
+                  to make a bar / line
                 </p>
                 <Link to="/covid19" className="read-more">
                   Read More
@@ -126,15 +104,6 @@ function Project() {
                 <p className="post-intro">
                   A basic current weather website , developed on Reactjs ,
                   bootstrap & Api !
-                  <span
-                    style={{
-                      color: "black",
-                      fontSize: "18px",
-                    }}
-                  >
-                    ReactJS , APIs
-                  </span>{" "}
-                  & bootstrap !! ...
                 </p>
                 <Link to="/weather" className="read-more">
                   Read More
@@ -150,16 +119,8 @@ function Project() {
                 <h6 className="post-title">library Management System</h6>
                 <small>&#8618; Oct 2020</small>
                 <p className="post-intro">
-                  It's a web application developed on{" "}
-                  <span
-                    style={{
-                      color: "black",
-                      fontSize: "18px",
-                    }}
-                  >
-                    Javascript
-                  </span>
-                  , Bootstrap and Cookies !!
+                  It's a easy level of web application developed on Javascript,
+                  Bootstrap and Cookies
                 </p>
                 <Link to="/librarymang" className="read-more">
                   Read More

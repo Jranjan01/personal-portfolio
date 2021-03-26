@@ -7,6 +7,7 @@ import Skills from "./components/skills/Skills";
 
 import "./App.css";
 import { FaGithub, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 function App() {
   return (
@@ -30,8 +31,8 @@ function App() {
         </div>
         <div className="social-link">
           {" "}
-          <a href="https://twitter.com/MrGudu5">
-            <FaTwitter id="link3" />
+          <a href="https://leetcode.com/Gudu/">
+            <SiLeetcode id="link3" />
           </a>
         </div>
       </div>
