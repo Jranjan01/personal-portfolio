@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import developer from "../../images/developer.png";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Header() {
+  // useEffect For animation
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+    AOS.refresh();
+  }, []);
   return (
     <header className="header">
       <div className="container">
@@ -35,7 +43,7 @@ function Header() {
               <img src={developer} alt="..." id="profile_pic" />
               {/* <h5>MERN stack Developer</h5> */}
             </div>
-            <div className="right-column ">
+            <div className="right-column " data-aos="zoom-out-down">
               <div id="preview-shadow">
                 <div id="preview">
                   <div id="corner-tl" className="corner"></div>

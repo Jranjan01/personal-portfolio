@@ -146,24 +146,24 @@ h1 {
   border-radius: 50%;
 }
 #dot-1 {
-  animation: dot_animation 1s linear infinite;
+  animation: dot_animation 2s linear infinite;
   animation-direction: alternate;
-  -moz-animation: dot_animation 1s linear infinite alternate;
-  -webkit-animation: dot_animation 1s linear infinite alternate;
+  -moz-animation: dot_animation 2s linear infinite alternate;
+  -webkit-animation: dot_animation 2s linear infinite alternate;
 }
 
 #dot-2 {
-  animation: dot_animation 1.2s linear infinite;
+  animation: dot_animation 3s linear infinite;
   animation-direction: alternate;
-  -moz-animation: dot_animation 1.2s linear infinite alternate;
-  -webkit-animation: dot_animation 1.2s linear infinite alternate;
+  -moz-animation: dot_animation 3s linear infinite alternate;
+  -webkit-animation: dot_animation 3s linear infinite alternate;
 }
 
 #dot-3 {
-  animation: dot_animation 1.5s linear infinite;
+  animation: dot_animation 4s linear infinite;
   animation-direction: alternate;
-  -moz-animation: dot_animation 1.5s linear infinite alternate;
-  -webkit-animation: dot_animation 1.5s linear infinite alternate;
+  -moz-animation: dot_animation 4s linear infinite alternate;
+  -webkit-animation: dot_animation 4s linear infinite alternate;
 }
 .dots-wrapper {
   display: flex;

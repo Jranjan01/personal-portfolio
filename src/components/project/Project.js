@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./project.css";
 import imageuploader from "../../images/imageuploader.png";
 import ecommerce from "../../images/ecommerce.png";
@@ -7,8 +7,15 @@ import library from "../../images/library.jpg";
 import weather from "../../images/weather2.png";
 
 import { Link } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Project() {
+  // useEffect For animation
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+    AOS.refresh();
+  }, []);
   return (
     <header className="project-wrapper container-fluid">
       <div className="container">
@@ -18,7 +25,7 @@ function Project() {
         </h2>
         <div className="post-wrapper">
           <div>
-            <div className="post">
+            <div className="post" data-aos="flip-up">
               <img className="thumbnail" src={imageuploader} alt=".." />
 
               <div className="post-preview">
@@ -44,7 +51,12 @@ function Project() {
           </div>
 
           <div>
-            <div className="post">
+            <div
+              className="post"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <img className="thumbnail" src={ecommerce} alt=".." />
 
               <div className="post-preview">
@@ -69,7 +81,11 @@ function Project() {
             </div>
           </div>
           <div>
-            <div className="post">
+            <div
+              className="post"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
               <img className="thumbnail" src={covid191} alt=".." />
 
               <div className="captions"></div>
@@ -96,7 +112,7 @@ function Project() {
           </div>
 
           <div>
-            <div className="post">
+            <div className="post" data-aos="zoom-in">
               <img className="thumbnail" src={weather} alt=".." />
               <div className="post-preview">
                 <h6 className="post-title">Weather Website</h6>
@@ -113,7 +129,7 @@ function Project() {
           </div>
 
           <div>
-            <div className="post">
+            <div className="post" data-aos="zoom-in-down">
               <img className="thumbnail" src={library} alt=".." />
               <div className="post-preview">
                 <h6 className="post-title">library Management System</h6>

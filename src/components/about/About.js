@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./about.css";
 import myinfo from "../../images/myinfo.png";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import resume from "../../images/resume.pdf";
+
 function About() {
+  // useEffect For animation
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+    AOS.refresh();
+  }, []);
   return (
-    <header className=" main-container">
+    <header className=" main-container ">
       <div className="container">
         <div className="about-wrapper">
-          <div className="about-me">
+          <div className="about-me" data-aos="fade-up">
             <h4 className="more_about">More about me</h4>
             <p className="p">
               Hello , i am
@@ -47,7 +56,7 @@ function About() {
               </a>
             </div>
           </div>
-          <div className="social-links">
+          <div className="social-links" data-aos="fade-down">
             <a href={myinfo} target="_blank">
               <img
                 src={myinfo}
@@ -56,7 +65,11 @@ function About() {
                 id="social-img"
               />
             </a>
-            <div className="fine_me">
+            <div
+              className="fine_me"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-center"
+            >
               <h3 id="find-me" className="text-white">
                 Find Me 👇
               </h3>

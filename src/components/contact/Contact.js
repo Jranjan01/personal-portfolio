@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./contact.css";
 function Contact() {
+  // useEffect For animation
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+    AOS.refresh();
+  }, []);
   function sendEmail(e) {
     e.preventDefault();
 
@@ -31,7 +38,14 @@ function Contact() {
         Get In Touch
       </h2>
       <div className="container contact_area">
-        <form id="contact-form" onSubmit={sendEmail} autoComplete="off">
+        <form
+          id="contact-form"
+          onSubmit={sendEmail}
+          autoComplete="off"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <label>Name :</label>
           <input
             className="input-field text-white"

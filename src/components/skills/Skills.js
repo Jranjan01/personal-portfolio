@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./skills.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Skills() {
+  // useEffect For animation
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+    AOS.refresh();
+  }, []);
   return (
     <header className="container-fluid parent-container ">
       <h3 id="skill" className="text-white">
@@ -9,7 +16,7 @@ function Skills() {
       </h3>
       <div className="skill-container">
         <div className="container main_container">
-          <div className="skill_area1">
+          <div className="skill_area1" data-aos="flip-left">
             <div className="html skill_degine">
               <h4>HTML 5</h4>
             </div>
@@ -23,7 +30,7 @@ function Skills() {
               <h4>Python</h4>
             </div>
           </div>
-          <div className="skill_area2">
+          <div className="skill_area2" data-aos="flip-up">
             <div className="react skill_degine">
               <h4>React JS</h4>
             </div>
@@ -52,7 +59,11 @@ function Skills() {
           {/* Other skills 👇 */}
           Familiar with 👇
         </h4>
-        <div className="other_skill ">
+        <div
+          className="other_skill "
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <div className="familiar_with">
             <div className=" familiar">
               <h4>MySQL</h4>
