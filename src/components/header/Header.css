@@ -11,7 +11,8 @@
 
 .header {
   background-color: var(--mainColor);
-  background-image: url(../../images/header_img.jpg);
+  background-image: linear-gradient(rgba(1, 5, 1, 0.4), rgba(2, 3, 2, 0.493)),
+    url(../../images/header_img.jpg);
   background-size: 100% 100%;
 }
 .name-wrapper {
@@ -119,12 +120,19 @@ h1 {
 .my_info {
   text-transform: uppercase;
   font-family: monospace;
+  font-size: 16px;
+}
+.styles_typicalWrapper__1_Uvh {
+  padding-left: 8px;
+  color: #7efff5;
+
+  font-weight: bold;
 }
 .my_info::after {
   content: "\f005";
   font-family: "Font Awesome 5 Free";
   width: var(--icon-width);
-  height: 25px;
+  height: 22px;
   font-size: 1.4rem;
   color: rgb(255, 30, 0);
   display: block;
@@ -323,12 +331,12 @@ a {
   align-items: center;
   justify-content: center;
   color: white;
+  transform: skewY(6deg) !important;
   padding: 20px;
   -webkit-box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);
   -moz-box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);
   box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);
 }
-
 #preview-shadow {
   /* background-color: var(--previewShadow); */
 
@@ -352,6 +360,7 @@ a {
 #preview > h3 {
   font-family: "Grenze Gotisch", cursive;
   font-family: "Wallpoet", cursive;
+  text-align: center;
 }
 .corner {
   width: 10px;
@@ -434,7 +443,7 @@ a {
   #nav-item {
     font-size: 12px;
   }
-  .text-white::after {
+  .typing_text::after {
     width: var(--icon-sm-width);
   }
 }

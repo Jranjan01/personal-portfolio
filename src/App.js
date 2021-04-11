@@ -9,6 +9,7 @@ import "./App.css";
 import { FaGithub, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import "aos/dist/aos.css";
+
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });

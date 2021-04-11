@@ -151,6 +151,7 @@ function Project() {
               </div>
             </div>
           </div>
+          <div className="extra"></div>
         </div>
       </div>
     </header>

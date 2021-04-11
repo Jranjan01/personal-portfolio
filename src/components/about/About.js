@@ -5,6 +5,7 @@ import "./about.css";
 import myinfo from "../../images/myinfo.png";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { BiCurrentLocation } from "react-icons/bi";
 import resume from "../../images/resume.pdf";
 
 function About() {
@@ -39,6 +40,10 @@ function About() {
               &#187; Apart from study i am pretty much interested to watching
               hacking / Technology related movies
             </p>
+            <p>
+              &#187; My strength is , i'm honest , self motivated and hardworing
+              person with positive attitude towards my career & life
+            </p>
 
             <div className="break my-2"></div>
             <p>
@@ -66,7 +71,7 @@ function About() {
               />
             </a>
             <div
-              className="fine_me"
+              className="find_me_container"
               data-aos="fade-up"
               data-aos-anchor-placement="center-center"
             >
@@ -120,6 +125,14 @@ function About() {
                 >
                   &#9990; Contact :- +91 8114994487
                 </p>
+
+                <address
+                  className="text-white "
+                  style={{ fontFamily: "monospace", fontSize: "14px" }}
+                >
+                  <BiCurrentLocation /> Address:-
+                  <span className="px-3">Jagatsinghpur , Odisha</span>
+                </address>
               </address>
             </div>
           </div>

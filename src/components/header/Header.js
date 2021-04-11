@@ -4,6 +4,7 @@ import developer from "../../images/developer.png";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Typical from "react-typical";
 function Header() {
   // useEffect For animation
   useEffect(() => {
@@ -16,7 +17,21 @@ function Header() {
       <div className="container">
         <div className="name-wrapper">
           <h1>Hi, I'm Jnana Ranjan Sethy,</h1>
-          <p className="text-white my_info">I'm a Full-Stack Developer</p>
+          <p className="text-white my_info typing_text">
+            I'm a
+            <Typical
+              steps={[
+                "Web developer",
+                1200,
+                "Full-stack developer",
+                1400,
+                "Mern stack developer",
+                1600,
+              ]}
+              loop={Infinity}
+              wrapper="span"
+            />
+          </p>
         </div>
         <div className="intro-wrapper">
           <div className="nav-wrapper ">
@@ -48,8 +63,27 @@ function Header() {
                 <div id="preview">
                   <div id="corner-tl" className="corner"></div>
                   <div id="corner-tr" className="corner"></div>
-                  <h3>What I'm Doing</h3>
-                  <p> I'm an Engineer by profession & a Web Developer</p>
+                  <h3>Who I am ?</h3>
+
+                  <p>
+                    {" "}
+                    <marquee
+                      width="100%"
+                      direction="left"
+                      height="auto"
+                      scrollamount="10"
+                    >
+                      I'm an Engineer by profession &
+                    </marquee>
+                    <marquee
+                      width="100%"
+                      direction="right"
+                      height="auto"
+                      scrollamount="10"
+                    >
+                      a Web Developer / Full-stack developer
+                    </marquee>
+                  </p>
                   <div id="corner-br" className="corner"></div>
                   <div id="corner-bl" className="corner"></div>
                 </div>

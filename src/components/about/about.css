@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Wallpoet&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +31,8 @@
 }
 
 .about-me > p {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
   text-transform: capitalize;
 }
 .more_about {
@@ -68,57 +69,61 @@
 #social-img {
   width: 100%;
 }
-.fine_me {
+.find_me_container {
   margin: 20px;
   padding: 0 1px;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.9);
-  animation: border_design 5s linear infinite;
-  animation-direction: alternate;
-  -moz-animation: border_design 5s linear infinite alternate;
-  -webkit-animation: border_design 5s linear infinite alternate;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #06224a;
+
+  transition: all 1s;
 }
-@keyframes border_design {
-  0% {
-    background-color: transparent;
-  }
-  15% {
-    background-color: rgb(0, 0, 0);
-  }
-  30% {
-    background-color: blue;
-  }
-  45% {
-    background-color: rgb(0, 0, 0);
-  }
-  60% {
-    background-color: transparent;
-  }
-  80% {
-    background-color: rgb(14, 17, 218);
-  }
-  100% {
-    background-color: rgb(219, 23, 72);
-  }
+.find_me_container ::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 0px solid red;
+  transition: all 1s;
+  top: -1px;
+
+  left: -1px;
+  border-top: 5px solid #1aeed2;
+  border-left: 5px solid #ff7c1f;
 }
+.find_me_container ::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+
+  transition: all 1s;
+  bottom: -1px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  right: -1px;
+  border-bottom: 5px solid #ffffff;
+  border-right: 5px solid #0245a3;
+}
+.find_me_container :hover ::after {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.find_me_container :hover ::before {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
 #find-me {
   font-family: "Grenze Gotisch", cursive;
   font-family: "Wallpoet", cursive;
   padding: 14px 0 8px 0;
   margin-bottom: 10px;
 }
-#find-me::after {
-  content: " ";
-  width: 100px;
-  height: 3px;
-  background: rgb(0, 255, 76);
-  position: absolute;
 
-  z-index: 20;
-  top: 28%;
-  left: 48%;
-  transform: translate(-48%);
-}
 .break {
   width: 100%;
   height: 3px;
@@ -175,6 +180,9 @@
   .social-links > a {
     font-size: 25px;
   }
+  .more_about::after {
+    top: 10%;
+  }
 }
 @media screen and (max-width: 341px) {
   #social-img {
@@ -197,10 +205,5 @@
   }
   .about-me > p {
     font-size: 14px;
-  }
-  #find-me::after {
-    top: 20%;
-    width: 60px;
-    left: 43%;
   }
 }

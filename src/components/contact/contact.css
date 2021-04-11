@@ -113,3 +113,12 @@
   left: 50%;
   transform: translate(-50%);
 }
+.transper_msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.upload {
+  width: 60px;
+}
