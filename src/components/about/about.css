@@ -73,49 +73,43 @@
   margin: 20px;
   padding: 0 1px;
   position: relative;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: #06224a;
+  border-radius: 25px;
+
+  background-color: rgba(8, 0, 0, 0.541);
 
   transition: all 1s;
 }
-.find_me_container ::after {
+/* .find_me_container ::after {
   content: "";
   width: 30px;
-  height: 30px;
+
   position: absolute;
-  border: 0px solid red;
+
   transition: all 1s;
   top: -1px;
-
+  z-index: 1;
   left: -1px;
   border-top: 5px solid #1aeed2;
-  border-left: 5px solid #ff7c1f;
 }
 .find_me_container ::before {
   content: "";
   width: 30px;
-  height: 30px;
-  position: absolute;
 
+  position: absolute;
+  z-index: 1;
   transition: all 1s;
   bottom: -1px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   right: -1px;
-  border-bottom: 5px solid #ffffff;
-  border-right: 5px solid #0245a3;
+  border-bottom: 5px solid #f5f6f8;
 }
 .find_me_container :hover ::after {
   width: 100%;
-  height: 100%;
-  cursor: pointer;
 }
 .find_me_container :hover ::before {
   width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
+} */
 
 #find-me {
   font-family: "Grenze Gotisch", cursive;
@@ -129,6 +123,56 @@
   height: 3px;
   background-color: rgb(17, 240, 221);
   border-radius: 20px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+}
+ul > li > a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: 0.5s;
+}
+.link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  font-size: 10px;
+
+  transition: 0.5s;
+}
+.linkedin {
+  color: rgb(26, 161, 240);
+}
+.instagram {
+  color: red;
+}
+.github {
+  color: black;
+}
+.leetcode {
+  color: rgb(26, 161, 240);
+}
+ul > li > a:hover {
+  box-shadow: 2px 2px 5px rgba(226, 229, 229, 0.884);
+  text-decoration: none;
+
+  transform: rotate(360deg) scale(1.3);
+  transition: 0.7s;
 }
 #social-link {
   display: flex;
@@ -205,5 +249,8 @@
   }
   .about-me > p {
     font-size: 14px;
+  }
+  ul > li > a {
+    margin: 0 5px;
   }
 }

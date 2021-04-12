@@ -80,7 +80,30 @@ function About() {
               </h3>
               <address>
                 <div id="social-link">
-                  <div className="social-links">
+                  <ul>
+                    <li>
+                      <a href="https://www.linkedin.com/in/j-ranjan-sethy-%F0%9F%87%AE%F0%9F%87%B3-35121a1b1/">
+                        <FaLinkedinIn className="link linkedin" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/Jranjangudu/">
+                        <FaGithub className="link github" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/its_me_gudu_/">
+                        <FaInstagram className="link instagram" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://leetcode.com/Gudu/">
+                        <SiLeetcode className="link leetcode" />
+                      </a>
+                    </li>
+                  </ul>
+
+                  {/* <div className="social-links">
                     <a href="https://www.linkedin.com/in/j-ranjan-sethy-%F0%9F%87%AE%F0%9F%87%B3-35121a1b1/">
                       <FaLinkedinIn id="link1" />
                     </a>
@@ -102,7 +125,7 @@ function About() {
                     <a href="https://leetcode.com/Gudu/">
                       <SiLeetcode id="link3" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
 
                 <p
