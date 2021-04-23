@@ -5,7 +5,9 @@ import "aos/dist/aos.css";
 import "./contact.css";
 import computer from "../../images/computer.gif";
 import upload from "../../images/uploading.gif";
-
+import { toast } from "react-toastify";
+import "../../../node_modules/react-toastify/dist/ReactToastify.css";
+toast.configure();
 function Contact() {
   // useEffect For animation
   useEffect(() => {
@@ -25,11 +27,26 @@ function Contact() {
       )
       .then(
         (result) => {
-          // console.log(result.text);
-          alert("your message send successfully");
+          toast.success(" message send successfully", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         },
         (error) => {
-          console.log(error.text);
+          toast.error("Something Error , Try Again !!", {
+            position: "top-center",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         }
       );
     e.target.reset();
