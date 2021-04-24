@@ -14,4 +14,4 @@ Fullstack Developer With Primary Focus On MERN Stack (MongoDB , Express , ReactJ
 
 <a href="https://leetcode.com/Gudu/">Leetcode </a>
 
-<img src="https://res.cloudinary.com/mrdev-gudu/image/upload/v1618230114/dbrtodk63hoicua93548.png " alt="profile"/>
+<img src="https://res.cloudinary.com/mrdev-gudu/image/upload/v1618230114/dbrtodk63hoicua93548.png" alt="profile"/>
