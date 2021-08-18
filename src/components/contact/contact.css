@@ -24,33 +24,6 @@
   -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.18);
-  animation: contact_border 1s linear infinite;
-  animation-direction: alternate;
-  -moz-animation: contact_border 1s linear infinite alternate;
-  -webkit-animation: contact_border 1s linear infinite alternate;
-}
-@keyframes contact_border {
-  0% {
-    border-color: red;
-  }
-  15% {
-    border-color: rgb(197, 179, 12);
-  }
-  30% {
-    border-color: blue;
-  }
-  45% {
-    border-color: green;
-  }
-  60% {
-    border-color: rgb(12, 200, 233);
-  }
-  80% {
-    border-color: rgb(2, 170, 91);
-  }
-  100% {
-    border-color: rgb(211, 18, 179);
-  }
 }
 #send-msg {
   font-family: "Anton", sans-serif;
@@ -112,13 +85,4 @@
   top: 9%;
   left: 50%;
   transform: translate(-50%);
-}
-.transper_msg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
-.upload {
-  width: 60px;
 }

@@ -71,30 +71,6 @@ h1 {
   }
 }
 
-@keyframes blink {
-  0% {
-    border-color: red;
-  }
-  15% {
-    border-color: rgb(197, 179, 12);
-  }
-  30% {
-    border-color: blue;
-  }
-  45% {
-    border-color: green;
-  }
-  60% {
-    border-color: rgb(12, 200, 233);
-  }
-  80% {
-    border-color: rgb(2, 170, 91);
-  }
-  100% {
-    border-color: rgb(211, 18, 179);
-  }
-}
-
 .intro-wrapper {
   background-color: var(--secondaryColor);
   background-color: #001845;
@@ -110,12 +86,6 @@ h1 {
 
   border: 2px solid;
   z-index: 10;
-
-  animation: blink 1s linear infinite;
-  animation-direction: alternate;
-
-  -moz-animation: blink 1s linear infinite alternate;
-  -webkit-animation: blink 1s linear infinite alternate;
 }
 .my_info {
   text-transform: uppercase;
@@ -225,8 +195,9 @@ a {
   cursor: pointer;
   color: white;
 }
+
 #nav-item:hover {
-  color: rgb(251, 6, 6);
+  color: rgb(109, 109, 112);
   transition: all 1s;
 }
 .center-area {
@@ -247,34 +218,6 @@ a {
   width: 200px;
   object-fit: cover;
   border: 1px solid var(--borderColor);
-  animation: profile_animation 1.5s linear infinite;
-  animation-direction: alternate;
-  -moz-animation: profile_animation 1.5s linear infinite alternate;
-  -webkit-animation: profile_animation 1.5s linear infinite alternate;
-}
-
-@keyframes profile_animation {
-  0% {
-    border-color: #00008b;
-  }
-  15% {
-    border-color: #ff1493;
-  }
-  30% {
-    border-color: #1e90ff;
-  }
-  45% {
-    border-color: #00ff00;
-  }
-  60% {
-    border-color: #f5fffa;
-  }
-  80% {
-    border-color: #ff4500;
-  }
-  100% {
-    border-color: #ffff00;
-  }
 }
 
 #profile_pic:hover {
@@ -331,7 +274,7 @@ a {
   align-items: center;
   justify-content: center;
   color: white;
-  transform: skewY(6deg) !important;
+
   padding: 20px;
   -webkit-box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);
   -moz-box-shadow: -22px -21px 1px 0px rgba(2, 7, 2, 0.87);

@@ -168,7 +168,6 @@ ul > li > a {
   color: rgb(26, 161, 240);
 }
 ul > li > a:hover {
-  box-shadow: 2px 2px 5px rgba(226, 229, 229, 0.884);
   text-decoration: none;
 
   transform: rotate(360deg) scale(1.3);

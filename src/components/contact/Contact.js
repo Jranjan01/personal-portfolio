@@ -3,8 +3,7 @@ import emailjs from "emailjs-com";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./contact.css";
-import computer from "../../images/computer.gif";
-import upload from "../../images/uploading.gif";
+
 import { toast } from "react-toastify";
 import "../../../node_modules/react-toastify/dist/ReactToastify.css";
 toast.configure();
@@ -57,17 +56,7 @@ function Contact() {
       <h2 className="text-center get_touch" id="send-msg">
         Get In Touch
       </h2>
-      <div className="transper_msg">
-        <div className="computer1">
-          <img src={computer} alt="..." />
-        </div>
-        <div>
-          <img src={upload} className="upload" alt="..." />
-        </div>
-        <div className="computer1">
-          <img src={computer} alt="..." />
-        </div>
-      </div>
+
       <div className="container contact_area">
         <form
           id="contact-form"

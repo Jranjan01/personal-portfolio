@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./about.css";
-import myinfo from "../../images/myinfo.png";
+import linkedin from "../../images/linkedin.png";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { BiCurrentLocation } from "react-icons/bi";
@@ -53,7 +53,7 @@ function About() {
             </p>
 
             <div className="pt-3">
-              <a href={resume} target="_blank">
+              <a href={resume} target="_blank" download>
                 <button className="button">
                   {" "}
                   <p className="resume">Resume &#8594;</p>
@@ -62,9 +62,9 @@ function About() {
             </div>
           </div>
           <div className="social-links" data-aos="fade-down">
-            <a href={myinfo} target="_blank">
+            <a href={linkedin} target="_blank">
               <img
-                src={myinfo}
+                src={linkedin}
                 className="img-fluid mySlides"
                 alt="..."
                 id="social-img"
@@ -82,50 +82,25 @@ function About() {
                 <div id="social-link">
                   <ul>
                     <li>
-                      <a href="https://www.linkedin.com/in/j-ranjan-sethy-%F0%9F%87%AE%F0%9F%87%B3-35121a1b1/">
+                      <a
+                        href="https://www.linkedin.com/in/j-ranjan-sethy-35121a1b1/"
+                        target="_blank"
+                      >
                         <FaLinkedinIn className="link linkedin" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/Jranjangudu/">
+                      <a href="https://github.com/Jranjangudu/" target="_blank">
                         <FaGithub className="link github" />
                       </a>
                     </li>
+
                     <li>
-                      <a href="https://www.instagram.com/its_me_gudu_/">
-                        <FaInstagram className="link instagram" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://leetcode.com/Gudu/">
+                      <a href="https://leetcode.com/Gudu/" target="_blank">
                         <SiLeetcode className="link leetcode" />
                       </a>
                     </li>
                   </ul>
-
-                  {/* <div className="social-links">
-                    <a href="https://www.linkedin.com/in/j-ranjan-sethy-%F0%9F%87%AE%F0%9F%87%B3-35121a1b1/">
-                      <FaLinkedinIn id="link1" />
-                    </a>
-                  </div>
-                  <div className="social-links">
-                    <a href="https://github.com/Jranjangudu/">
-                      <FaGithub />
-                    </a>
-                  </div>
-                  <div className="social-links">
-                    {" "}
-                    <a href="https://www.instagram.com/its_me_gudu_/">
-                      <FaInstagram id="link2" />
-                    </a>
-                  </div>
-
-                  <div className="social-links">
-                    {" "}
-                    <a href="https://leetcode.com/Gudu/">
-                      <SiLeetcode id="link3" />
-                    </a>
-                  </div> */}
                 </div>
 
                 <p
