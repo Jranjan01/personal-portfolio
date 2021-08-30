@@ -32,7 +32,7 @@ function Skills() {
           </div>
           <div className="skill_area2" data-aos="flip-up">
             <div className="react skill_degine">
-              <h4>React JS</h4>
+              <h4>React JS & Redux</h4>
             </div>
             <div className="nodejs skill_degine">
               <h4>Node JS</h4>

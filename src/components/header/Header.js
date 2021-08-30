@@ -55,7 +55,10 @@ function Header() {
           </div>
           <div className="center-area ">
             <div className="left-column">
-              <img src={developer} alt="..." id="profile_pic" />
+              <div className="image_wrapper">
+                {" "}
+                <img src={developer} alt="..." id="profile_pic" />
+              </div>
               {/* <h5>MERN stack Developer</h5> */}
             </div>
             <div className="right-column " data-aos="zoom-out-down">
@@ -81,7 +84,7 @@ function Header() {
                       height="auto"
                       scrollamount="10"
                     >
-                      a Web Developer / Full-stack developer
+                      a Full-stack developer ( Mern-stack )
                     </marquee>
                   </p>
                   <div id="corner-br" className="corner"></div>

@@ -6,7 +6,7 @@
     url("../../images/skill_img.jpg");
   position: relative;
   background-size: 100% 100%;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .skill-container {

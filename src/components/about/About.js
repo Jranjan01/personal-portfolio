@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./about.css";
-import linkedin from "../../images/linkedin.png";
-import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import github from "../../images/github.png";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { BiCurrentLocation } from "react-icons/bi";
 import resume from "../../images/resume.pdf";
@@ -23,10 +23,10 @@ function About() {
             <h4 className="more_about">More about me</h4>
             <p className="p">
               Hello , i am
-              <span className="text-info"> &#74;NANA RANJAN SETHY </span> & I'm
-              an Engineer by profession and a
-              <span className="text-info"> WEB DEVELOPER </span> (MERN Stack
-              developer)
+              <span className="text-info"> &#74;NANA RANJAN SETHY </span> & I am
+              a Self-taught Programmer & I'm An Engineer By Profession And A
+              <span className="text-info"> Full-stack Developer </span> (MERN
+              Stack )
             </p>
             <p>
               &#187; Presently i am Pursuring my Graduation from Raajdhani
@@ -53,18 +53,24 @@ function About() {
             </p>
 
             <div className="pt-3">
-              <a href={resume} target="_blank" download>
+              <a href={resume} target="_blank">
                 <button className="button">
                   {" "}
                   <p className="resume">Resume &#8594;</p>
                 </button>
               </a>
+              <a href={resume} target="_blank" download>
+                <button className="button">
+                  {" "}
+                  <p className="resume">Download</p>
+                </button>
+              </a>
             </div>
           </div>
           <div className="social-links" data-aos="fade-down">
-            <a href={linkedin} target="_blank">
+            <a href={github} target="_blank">
               <img
-                src={linkedin}
+                src={github}
                 className="img-fluid mySlides"
                 alt="..."
                 id="social-img"

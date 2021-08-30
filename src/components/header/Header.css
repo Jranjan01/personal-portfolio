@@ -116,6 +116,9 @@ h1 {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  /* position: sticky;
+  top: 2px;
+  z-index: 99; */
 }
 .browser-dot {
   height: 15px;
@@ -193,11 +196,26 @@ a {
 }
 #nav-item {
   cursor: pointer;
+
   color: white;
+  position: relative;
 }
 
+#nav-item::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: rgb(0, 195, 255);
+  position: absolute;
+  top: 28px;
+  left: 0;
+  transition: all 0.5s;
+}
+#nav-item:hover:after {
+  width: 100%;
+}
 #nav-item:hover {
-  color: rgb(109, 109, 112);
+  color: rgb(184, 184, 187);
   transition: all 1s;
 }
 .center-area {
@@ -209,6 +227,7 @@ a {
   /* grid-area: left-column; */
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 #profile_pic {
   display: block;
@@ -218,6 +237,8 @@ a {
   width: 200px;
   object-fit: cover;
   border: 1px solid var(--borderColor);
+  position: relative;
+  z-index: 9;
 }
 
 #profile_pic:hover {
@@ -261,6 +282,32 @@ a {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.image_wrapper::after {
+  content: " ";
+  border: 15px solid #03bea2;
+  border-radius: 10px;
+  position: absolute;
+  height: 220px;
+  width: 220px;
+  top: 40px;
+  opacity: 0;
+  left: -10px;
+  animation: pulsate infinite 2s linear;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
   }
 }
 
