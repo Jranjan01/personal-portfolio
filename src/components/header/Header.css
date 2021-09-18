@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Wallpoet&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
 :root {
   --icon-width: 20rem;
   --icon-sm-width: 10rem;
@@ -25,21 +24,29 @@
 }
 
 .name-wrapper > h1 {
-  border-right: solid 3px rgba(0, 255, 0, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  font-size: 3rem;
-  text-shadow: 2px 2px 2px rgb(7, 84, 156);
-  font-family: "Grenze Gotisch", cursive;
+  font-size: 2.5rem;
 
+  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   margin: 10px auto;
-  color: var(--mainText);
-
-  /* font-family: "Roboto Slab", serif; */
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background-image: url("../../images/back.png");
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 16s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
 }
 
 /* Animation */
-h1 {
+/* h1 {
   animation: animated-text 4s steps(25, end) 1s 1 normal both,
     animated-cursor 600ms steps(29, end) infinite;
 
@@ -47,29 +54,29 @@ h1 {
     animated-cursor 600ms steps(29, end) infinite;
   -webkit-animation: animated-text 4s steps(25, end) 1s 1 normal both,
     animated-cursor 600ms steps(29, end) infinite;
-}
+} */
 
 /* text animation */
 
-@keyframes animated-text {
+/* @keyframes animated-text {
   from {
     width: 0;
   }
   to {
     width: 22ch;
   }
-}
+} */
 
 /* cursor animations */
 
-@keyframes animated-cursor {
+/* @keyframes animated-cursor {
   from {
     border-right-color: rgba(46, 248, 255, 0.75);
   }
   to {
     border-right-color: transparent;
   }
-}
+} */
 
 .intro-wrapper {
   background-color: var(--secondaryColor);
@@ -127,24 +134,27 @@ h1 {
   border-radius: 50%;
 }
 #dot-1 {
-  animation: dot_animation 2s linear infinite;
-  animation-direction: alternate;
-  -moz-animation: dot_animation 2s linear infinite alternate;
-  -webkit-animation: dot_animation 2s linear infinite alternate;
+  background-color: #ff605c;
+  animation: dot_animation 1.2s linear infinite;
+
+  -moz-animation: dot_animation 1.2s linear infinite alternate;
+  -webkit-animation: dot_animation 1.2s linear infinite alternate;
 }
 
 #dot-2 {
-  animation: dot_animation 3s linear infinite;
-  animation-direction: alternate;
-  -moz-animation: dot_animation 3s linear infinite alternate;
-  -webkit-animation: dot_animation 3s linear infinite alternate;
+  animation: dot_animation 1.2s linear infinite;
+
+  -moz-animation: dot_animation 1.2s linear infinite alternate;
+  -webkit-animation: dot_animation 1.2s linear infinite alternate;
+  background-color: #ffbd44;
 }
 
 #dot-3 {
-  animation: dot_animation 4s linear infinite;
-  animation-direction: alternate;
-  -moz-animation: dot_animation 4s linear infinite alternate;
-  -webkit-animation: dot_animation 4s linear infinite alternate;
+  animation: dot_animation 1.2s linear infinite;
+
+  -moz-animation: dot_animation 1.2s linear infinite alternate;
+  -webkit-animation: dot_animation 1.2s linear infinite alternate;
+  background-color: #00ca4e;
 }
 .dots-wrapper {
   display: flex;
@@ -162,25 +172,13 @@ h1 {
 }
 @keyframes dot_animation {
   0% {
-    background-color: #00008b;
+    transform: scale(0.5);
   }
-  15% {
-    background-color: #ff1493;
-  }
-  30% {
-    background-color: #1e90ff;
-  }
-  45% {
-    background-color: #00ff00;
-  }
-  60% {
-    background-color: #f5fffa;
-  }
-  80% {
-    background-color: #ff4500;
+  50% {
+    transform: scale(0.8);
   }
   100% {
-    background-color: #ffff00;
+    transform: scale(1);
   }
 }
 a {

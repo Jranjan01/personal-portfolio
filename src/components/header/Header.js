@@ -16,7 +16,7 @@ function Header() {
     <header className="header">
       <div className="container">
         <div className="name-wrapper">
-          <h1>Hi, I'm Jnana Ranjan Sethy,</h1>
+          <h1>Hi, I'm J Ranjan Sethy</h1>
           <p className="text-white my_info typing_text">
             I'm a
             <Typical

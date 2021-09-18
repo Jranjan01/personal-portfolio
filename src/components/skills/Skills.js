@@ -21,7 +21,7 @@ function Skills() {
               <h4>HTML 5</h4>
             </div>
             <div className="css skill_degine">
-              <h4>CSS 3</h4>
+              <h4>CSS 3 & SCSS</h4>
             </div>
             <div className="javascript skill_degine">
               <h4>JavaScript</h4>
