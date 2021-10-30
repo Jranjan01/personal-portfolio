@@ -95,8 +95,8 @@ function Skills() {
             }}
           >
             <span style={{ fontSize: "30px", color: "#09f7f7" }}>&#x2623;</span>{" "}
-            DS , Algo , Bootstrap , material-ui , Git , Github , Heroku ,
-            Netlify{" "}
+            DS , Algo ,FireBase ,Bootstrap , material-ui , Git , Github , Heroku ,
+            Netlify , PWA{" "}
             <span style={{ fontSize: "30px", color: "#09f7f7" }}>&#x2623;</span>
           </strong>
         </div>
