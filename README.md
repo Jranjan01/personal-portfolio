@@ -8,7 +8,6 @@ Fullstack Developer With Primary Focus On MERN Stack (MongoDB , Express , ReactJ
 
 <a href="https://www.linkedin.com/in/j-ranjan-sethy-%F0%9F%87%AE%F0%9F%87%B3-35121a1b1/">Linkedin </a>
 
-<a href="https://www.instagram.com/its_me_gudu_/">Instagram </a>
 
 <a href="https://github.com/Jranjangudu/">Github </a>
 
